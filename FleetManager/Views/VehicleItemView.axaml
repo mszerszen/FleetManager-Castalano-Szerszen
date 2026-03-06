@@ -1,12 +1,21 @@
-<!-- (UserControl - widok) -->
-
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:models="clr-namespace:FleetManager.Models"
+             xmlns:vm="clr-namespace:FleetManager.ViewModels"
+             x:DataType="models:Vehicle"
+             mc:Ignorable="d"
              x:Class="FleetManager.Views.VehicleItemView">
     
+    <StackPanel Width="400" Spacing="5" Orientation="Vertical">
+        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+        <TextBlock Text="{Binding RegistrationNumber}" />
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Poziom Paliwa: " />
+            <TextBlock Text="{Binding FuelPercentage}"></TextBlock>
+        </StackPanel>
+        <TextBlock Text="{Binding Status}" FontStyle="Italic"> </TextBlock>
+    </StackPanel>
     
-    
-</UserControl>
+</UserControl> 
