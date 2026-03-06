@@ -1,3 +1,5 @@
+# Marsel Castalano i Marceli Szerszeń
+
 # 🚚 Fleet Manager: System Zarządzania Flotą (Project ROVER)
 ## 📋 Opis Projektu
 Fleet Manager to krytyczny system desktopowy służący do monitorowania i zarządzania flotą pojazdów logistycznych. System pozwala na podgląd stanu paliwa, zmianę statusów operacyjnych oraz zarządzanie bazą pojazdów w czasie rzeczywistym.
