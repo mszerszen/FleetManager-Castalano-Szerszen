@@ -157,11 +157,10 @@
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.AssemblyInfo.cs
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.csproj.CoreCompileInputs.cache
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.sourcelink.json
-/home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.CopyLocal.cache
-/home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.csproj.Fody.RuntimeCopyLocal.cache
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetMan.993C8869.Up2Date
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.dll
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/refint/FleetManager.dll
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.pdb
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/FleetManager.genruntimeconfig.cache
 /home/marceli/Documents/C#/lekcja9/FleetManager/obj/Debug/net10.0/ref/FleetManager.dll
+/home/marceli/Documents/C#/lekcja9/FleetManager/bin/Debug/net10.0/Data/vehicles.json
