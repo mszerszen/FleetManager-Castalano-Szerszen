@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
+using System.Reactive;
 using System.Text.Json;
 using FleetManager.Models;
+using ReactiveUI;
+using ReactiveUI.Fody.Helpers;
 
 namespace FleetManager.ViewModels;
 
@@ -13,10 +17,32 @@ public class MainWindowViewModel : ViewModelBase
 
     private const string FilePath = "Data/vehicles.json";
     private static readonly JsonSerializerOptions JsonOptions = new() {WriteIndented = true};
+    
+    [Reactive] public string NewName { get; set; } = string.Empty;
+    [Reactive] public string NewRegistrationNumber { get; set; } = string.Empty;
+    
+    public ReactiveCommand<Unit, Unit> AddCommand { get; }
 
     public MainWindowViewModel()
     {
         LoadVehicles();
+        
+        AddCommand = ReactiveCommand.Create(AddVehicle);
+    }
+
+    private void AddVehicle()
+    {
+        if (!new List<string> { NewName, NewRegistrationNumber }.Any(string.IsNullOrWhiteSpace))
+        {
+            Vehicles.Add(new Vehicle
+            {
+                Name = NewName,
+                RegistrationNumber = NewRegistrationNumber
+            });
+            SaveToJSON();
+            
+            NewName = NewRegistrationNumber = string.Empty;
+        }
     }
 
     private void LoadVehicles()
@@ -44,6 +70,10 @@ public class MainWindowViewModel : ViewModelBase
         try
         {
             File.WriteAllText(FilePath, JsonSerializer.Serialize(Vehicles, JsonOptions));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
         }
     }
 }

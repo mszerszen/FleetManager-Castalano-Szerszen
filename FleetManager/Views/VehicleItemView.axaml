@@ -14,8 +14,9 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Poziom Paliwa: " />
             <TextBlock Text="{Binding FuelPercentage}"></TextBlock>
+            <TextBlock Text="%" />
         </StackPanel>
-        <TextBlock Text="{Binding Status}" FontStyle="Italic"> </TextBlock>
+        <TextBlock Text="{Binding Status}" FontStyle="Italic" />
     </StackPanel>
     
 </UserControl> 

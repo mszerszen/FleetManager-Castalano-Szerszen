@@ -9,13 +9,14 @@
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         x:CompileBindings="False"
+        WindowState="Maximized"
         Title="FleetManager">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <StackPanel Orientation="Horizontal">
+    <StackPanel Orientation="Horizontal" Spacing="20">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Lista Pojazdów" FontWeight="Bold" Margin="20" FontSize="30" />
             <ListBox ItemsSource="{Binding Vehicles}">
