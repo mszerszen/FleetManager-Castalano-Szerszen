@@ -1830,25 +1830,24 @@
     ]
   },
   "packageFolders": {
-    "/home/marceli/.nuget/packages/": {}
+    "/home/marsel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/marceli/Documents/C#/lekcja9/FleetManager/FleetManager.csproj",
+      "projectUniqueName": "/home/marsel/Documents/fleetmanager/FleetManager/FleetManager.csproj",
       "projectName": "FleetManager",
-      "projectPath": "/home/marceli/Documents/C#/lekcja9/FleetManager/FleetManager.csproj",
-      "packagesPath": "/home/marceli/.nuget/packages/",
-      "outputPath": "/home/marceli/Documents/C#/lekcja9/FleetManager/obj/",
+      "projectPath": "/home/marsel/Documents/fleetmanager/FleetManager/FleetManager.csproj",
+      "packagesPath": "/home/marsel/.nuget/packages/",
+      "outputPath": "/home/marsel/Documents/fleetmanager/FleetManager/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/marceli/.nuget/NuGet/NuGet.Config"
+        "/home/marsel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1867,7 +1866,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -1918,7 +1917,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/marsel/.dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

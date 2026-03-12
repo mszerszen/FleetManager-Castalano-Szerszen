@@ -4,19 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:models="clr-namespace:FleetManager.Models"
              xmlns:vm="clr-namespace:FleetManager.ViewModels"
-             x:DataType="models:Vehicle"
+             x:DataType="vm:VehicleItemViewModel"
              mc:Ignorable="d"
+             
              x:Class="FleetManager.Views.VehicleItemView">
-    
+
     <StackPanel Width="400" Spacing="5" Orientation="Vertical">
         <TextBlock Text="{Binding Name}" FontWeight="Bold" />
         <TextBlock Text="{Binding RegistrationNumber}" />
+
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Poziom Paliwa: " />
-            <TextBlock Text="{Binding FuelPercentage}"></TextBlock>
+            <TextBlock Text="{Binding FuelPercentage}" />
             <TextBlock Text="%" />
         </StackPanel>
-        <TextBlock Text="{Binding Status}" FontStyle="Italic" />
+
+        <Button Content="Available" Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).}" CommandParameter="{Binding Vehicle}" />
+        <Button Content="InRoute" Command="{Binding SetInRouteCommand}" CommandParameter="{Binding Vehicle}" />
+        <Button Content="Service" Command="{Binding SetServiceCommand}" CommandParameter="{Binding Vehicle}" />
     </StackPanel>
-    
-</UserControl> 
+</UserControl>  
