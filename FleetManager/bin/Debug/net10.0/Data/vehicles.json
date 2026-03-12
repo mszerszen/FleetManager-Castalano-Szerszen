@@ -4,5 +4,17 @@
     "RegistrationNumber": "NO1234A",
     "FuelPercentage": 100,
     "Status": "Available"
+  },
+  {
+    "Name": "audi a5",
+    "RegistrationNumber": "NOL829812",
+    "FuelPercentage": 100,
+    "Status": "Available"
+  },
+  {
+    "Name": "dad",
+    "RegistrationNumber": "wdadwad213",
+    "FuelPercentage": 100,
+    "Status": "Available"
   }
 ]

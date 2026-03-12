@@ -22,12 +22,32 @@ public class MainWindowViewModel : ViewModelBase
     [Reactive] public string NewRegistrationNumber { get; set; } = string.Empty;
     
     public ReactiveCommand<Unit, Unit> AddCommand { get; }
+    public ReactiveCommand<Unit, Vehicle> SetAvailableCommand { get; }
+    public ReactiveCommand<Unit, Vehicle> SetInRouteCommand { get; }
+    public ReactiveCommand<Unit, Vehicle> SetServiceCommand { get; }
 
     public MainWindowViewModel()
     {
         LoadVehicles();
         
         AddCommand = ReactiveCommand.Create(AddVehicle);
+        SetAvailableCommand = ReactiveCommand.Create(() =>
+        {
+            Vehicle.Status = "Available";
+            SaveToJSON();
+        });
+
+        SetInRouteCommand = ReactiveCommand.Create(() =>
+        {
+            Vehicle.Status = "InRoute";
+            SaveToJSON();
+        });
+
+        SetServiceCommand = ReactiveCommand.Create((vehicle) =>
+        {
+            Vehicle.Status = "Service";
+            SaveToJSON();
+        });
     }
 
     private void AddVehicle()
@@ -65,6 +85,7 @@ public class MainWindowViewModel : ViewModelBase
         }
     }
 
+    
     private void SaveToJSON()
     {
         try

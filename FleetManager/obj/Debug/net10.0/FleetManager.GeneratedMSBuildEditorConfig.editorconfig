@@ -17,17 +17,17 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FleetManager
-build_property.ProjectDir = /home/marceli/Documents/C#/lekcja9/FleetManager/
+build_property.ProjectDir = /home/marsel/Documents/fleetmanager/FleetManager/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/marceli/Documents/C\#/lekcja9/FleetManager/App.axaml]
+[/home/marsel/Documents/fleetmanager/FleetManager/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/marceli/Documents/C\#/lekcja9/FleetManager/Views/MainWindow.axaml]
+[/home/marsel/Documents/fleetmanager/FleetManager/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/marceli/Documents/C\#/lekcja9/FleetManager/Views/VehicleItemView.axaml]
+[/home/marsel/Documents/fleetmanager/FleetManager/Views/VehicleItemView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
